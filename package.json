@@ -1,0 +1,19 @@
+{
+    "name": "api-gateway",
+    "version": "1.0.0",
+    "description": "simple api gateway",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon gateway.js"
+    },
+    "author": "Pamuditha Jayasundara",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "express": "^4.18.1"
+    }
+}
