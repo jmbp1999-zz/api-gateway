@@ -1,14 +1,15 @@
 const express = require("express");
 const app = express();
+const bodyParser = require("body-parser");
 const PORT = 4001;
-
 app.use(express.json());
-
 app.get("/fakeapi", (req, res, next) => {
     res.send("Hello from FakeAPI !");
 });
 
-app.get("/bogusapi", (req, res, next) => {
+app.post("/bogusapi", (req, res, next) => {
+    console.log(req.headers);
+    console.log(req.body);
     res.send("Hello from BogusAPI!");
 });
 
